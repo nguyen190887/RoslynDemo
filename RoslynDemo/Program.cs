@@ -9,7 +9,16 @@ namespace RoslynDemo
         {
             //Hello();
 
-            SyntaxWalkerSample.Do();
+            //SyntaxWalkerSample.Do();
+
+            #region Transformation
+
+            //Console.WriteLine(SyntaxTransformationSample.ReplaceNamespace());
+            Console.WriteLine(SyntaxTransformationSample.ReplaceTypeWithVarKeyword());
+
+            #endregion
+
+            Console.Read();
         }
 
         static void Hello()
